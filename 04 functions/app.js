@@ -4,17 +4,19 @@ class App
     {
 
         console.log("hello world!");
-        superMooieGlobalFunction();
+      
         //code gaat hier!
-        function superMooieGlobalFunction()
+        function argumentsAreHandy(shoutout)
         {
-            console.log("ïk ben global");
-            console.log("dus je mag mij overal aanroepen");
+            console.log("do you want to give a shoutout?");
+            console.log(shoutout);
+
         }
 
-        superMooieGlobalFunction();
-        superMooieGlobalFunction();
-        superMooieGlobalFunction();
+        argumentsAreHandy("Super Shout out");
+        argumentsAreHandy("Super Shout in");
+        argumentsAreHandy("Super Shout between");
+
 
     }
 }
