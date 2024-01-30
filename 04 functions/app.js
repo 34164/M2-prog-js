@@ -1,60 +1,18 @@
-class App 
-{
-    runApplication()
-    {
-
-        console.log("hello world!");
-      
-        //code gaat hier!
-       
-
-    }
+function logW(){
+    let u = 9;
+    let h = 8;
+    let l = 15;
+    let logY = Math.log(l) + h + Math.pow(u,2);
+    console.log(logY);
 }
-
-let app = new App();
-app.runApplication();
-
-
-
-
-function argumentsAreHandy(shoutout)
-{
-    console.log("do you want to give a shoutout?");
-    console.log(shoutout);
-
-}
-
-argumentsAreHandy("Super Shout out");
-argumentsAreHandy("Super Shout in");
-argumentsAreHandy("Super Shout between");
-
-function heeftEenResultaart()
-{
-    let resultaat =1;
-    return resultaat;
-}
-
-let hetresultaat = heeftEenResultaart();
-console.log(hetresultaat);
-console.log(heeftEenResultaart());
-
-let x =9;
-let a =3;
-let b =4;
-let c =89
-
-let y = (a*(x*x) )+ (b*x) +c;
-console.log(y); 
-
+   
 function ax2bcWiskunde(x,a,b,c)
-{ 
-  let y = (a*(x*x) )+ (b*x) +c;
-  return y; 
+{
+    let y = (a*(x*x) )+ (b*x)+c;
+    return y;
 }
-
-let y1 = ax2bcWiskunde(9,3,4,89);
+let y1 = ax2bcWiskunde(9,3,4,4,89);
 console.log(y1);
-
 
 let y2 = ax2bcWiskunde(3,6,5,45);
 console.log(y2);
@@ -62,20 +20,83 @@ console.log(y2);
 let y3 = ax2bcWiskunde(7,1,2,13);
 console.log(y3);
 
-let u = 9;
-let h = 8;
-let l = 15
-function berekening(u,h,l){
+function geforceerd(u,h,l){
+
     let logY = Math.log(l) + h + Math.pow(u,2);
-    return logY 
+    console.log(logY)
+}
+geforceerd(9,8,15)
+
+function argumentsAreHandy(supershoutout)
+{
+    console.log("do you want to give a shoutout");
+    console.log(supershoutout);
+
+}
+argumentsAreHandy("Maxverstappen");
+argumentsAreHandy("Maxverstappen");
+argumentsAreHandy("Maxverstappen");
+
+
+function superMooieGlobalFunction()
+{
+    console.log("Ik ben global");
+    console.log("dus je mag mij overal aanroepen ");
+}
+superMooieGlobalFunction();
+superMooieGlobalFunction();
+superMooieGlobalFunction();
+
+
+
+class App
+{
+    runApplication()
+    {
+      console.log("hello world");
+      superMooieGlobalFunction();
+    }
+
+
+newClassFunction()
+{
+    console.log("hello world in de nieuweClassFunction");
+
 }
 
-let u2 = berekening(2,5,7);
-console.log(u2);
+anotherFunctionWithArguments(aArgument)
+{
+    console.log("kom maar met je argument");
+    console.log("hier");
+    console.log(aArgument);
+}
+Mario()
+{
+    console.log("MARIO!!");
+}
+schrik()
+{
+    let bang = "BWAHAHA!!";
+    return bang;
+}
+Math(x,a)
+{
+    let y = x + a
+    return y;
+}
+besteF1Coureur()
+{
+    console.log("Ik wil op vakantie");
+}
+}
 
-
-
-
-
-
-
+let app = new App();
+app.runApplication();
+app.newClassFunction();
+app.anotherFunctionWithArguments("dit is een argument..");
+app.Mario();
+let schrikken = app.schrik();
+console.log(schrikken);
+let antwoord = app.Math(89,314);
+console.log(antwoord)
+app.besteF1Coureur();
