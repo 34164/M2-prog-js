@@ -11,16 +11,17 @@ class App
         let versieNummer = 0.9;
         console.log("Dit is het versienummer  " + versieNummer );
         
-        let versieDatum =  2023;
+        let versieDatum = 21-11-2023;
         console.log("de versiedatum " +versieDatum);
         
-        let autheur = Amir;
-        console.log("de auteur" + Amir);
+        let autheur = "Amir";
+        console.log("de autheur " +autheur);
         
-        let copyright = copyRight;
-        console.log("dit is de copyright" +copyright);
+        
+        let copyRight = ("copyRight");
+        console.log("dit is de copyright" +copyRight);
 
-        let distributeur = leraarSoft;
+        let leraarSoft = ("leraarSoft");
         console.log("diributeur" +leraarSoft);
 
         let drakmode = true;

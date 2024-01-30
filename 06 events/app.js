@@ -7,7 +7,7 @@ class App
         uibutton.addEventListener("click", (e)=>
         {
            const para = document.createElement("p")
-           const node = document.createTextNode("This is new")
+           const node = document.createTextNode("This is cool")
            para.appendChild(node)
            document.body.appendChild(para)
         });
@@ -17,10 +17,10 @@ class App
            const para = document.createElement("p")
            const header = document.createElement("h1")
            const image = document.createElement("img");
-           image.src = "img/1.png";
+           image.src = "img/pexels-life.jpg";
            image.width = 500; 
            image.height = 600; 
-           const paranode = document.createTextNode("This is new")
+           const paranode = document.createTextNode("Dit is cool")
            const headernode = document.createTextNode("or not?")
            para.appendChild(paranode)
            header.appendChild(headernode)

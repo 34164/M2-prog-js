@@ -41,7 +41,7 @@ app.runApplication();
     console.log(" naam van de app = " + app.appNaam);
     console.log(" versienummer  " + app.versieNummer );
     console.log(" versiedatum " + app.versieDatum);
-    console.log(" auteur" + app.auteur);
+    console.log(" auteur = "  + app.auteur);
     console.log(" copyright " +  app.copyright);
     console.log(" diributeur " + app.leraarSoft);
     if (app.drakmode) {

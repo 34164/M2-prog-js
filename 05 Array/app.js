@@ -1,7 +1,7 @@
 class App {
     runApplication() {
         console.log("hello world");
-        const list = ["Michael Jackson", "Charlie Puth", "NF"];
+        const list = ["artist1", "artist2", "artist3"];
         console.log(list);
         for (let i = 0; i < list.length; i++) {
             const element = i +": " + list[i];
@@ -13,18 +13,18 @@ class App {
             const element = nummers[i] + 1;
             console.log(element);
         }
-        list.push("bod dylan")
-        list.push("Prince")
+        list.push("test1")
+        list.push("test2")
         for (let i = 0; i < list.length; i++) {
             const element = i +": " + list[i];
             console.log(element);
         }
-        let indexToRemove = list.indexOf("bob dylan")
+        let indexToRemove = list.indexOf("test1")
         list.splice(indexToRemove,1)
-        indexToRemove = list.indexOf("prince")
+        indexToRemove = list.indexOf("test2")
         list.splice(indexToRemove,1)
-        list.push("The weekend")
-        list.push("Leonel Thomas lll")
+        list.push("test3")
+        list.push("test4")
         for (let i = 0; i < list.length; i++) {
             const element = i +": " + list[i];
             console.log(element);
@@ -35,12 +35,12 @@ class App {
         let headerByCssClass = document.getElementsByClassName("bandName")
         let bandNameList = [];
         for (let i = 0; i < headerByCssClass.length; i++) {
-            headerByCssClass[i].innerText = "TestA";
+            headerByCssClass[i].innerText = "huh????";
             console.log(bandNameList);
         }
         let headerElements = document.querySelectorAll("h1");
         for (let i = 0; i < headerElements.length; i++) {
-            headerElements[i].innerText = "TestB";
+            headerElements[i].innerText = "huh????";
         }
         let headersByCssClass = document.getElementsByClassName("test");
         for (let i = 0; i < headerByCssClass.length; i++) {

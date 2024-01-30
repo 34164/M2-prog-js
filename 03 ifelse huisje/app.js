@@ -96,13 +96,6 @@ g.fillStyle = "green";
  g.stroke();
  g.fill();
 
- let randomGetal = Math.random(); 
- if (randomGetal > 0.5) {
-    drawWindow(true);
- } else{
-    drawWindow(false);
- }
-
  
         
 
